@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenCloud Client - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #2a2a2a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #28a745;
+            text-decoration: none;
+        }
+        nav a {
+            color: #e0e0e0;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover, nav a.active {
+            color: #28a745;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 80vh;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #28a745, #8effa1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero h1 .glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        .hero p {
+            font-size: 1.5em;
+            color: #b0b0b0;
+        }
+        .content-section {
+            padding: 60px 40px;
+            background-color: #1a1a1a;
+            text-align: center;
+        }
+        .content-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #28a745;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background-color: #121212;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #2a2a2a;
+        }
+        .feature-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #28a745;
+        }
+        .feature-card p {
+            color: #b0b0b0;
+            line-height: 1.6;
+        }
+        .socials-section {
+            padding: 60px 40px;
+            text-align: center;
+            background-color: #121212;
+        }
+        .socials-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #28a745;
+        }
+        .social-links a {
+            color: #e0e0e0;
+            font-size: 2.5em;
+            margin: 0 20px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #28a745;
+            transform: scale(1.1);
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #28a745, 0 0 20px #28a745; }
+            to { text-shadow: 0 0 20px #39e65f, 0 0 30px #39e65f; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">GreenCloud</a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="download.html">Download</a>
+            <a href="news.html">News</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to <span class="glow">GreenCloud</span></h1>
+            <p>The ultimate Minecraft 1.8.9 hybrid client, reimagined.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Why Choose GreenCloud?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Optimized Performance</h3>
+                    <p>Experience Minecraft like never before with significant FPS boosts and smoother gameplay, even on lower-end systems.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Hybrid Functionality</h3>
+                    <p>Get the best of both worlds. A powerful client for PvP, combined with utility features for a seamless experience.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Clean & Customizable</h3>
+                    <p>A sleek, modern interface that is fully customizable to suit your preferences. Change HUD elements, mods, and more.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="socials-section">
+            <h2>Join Our Community</h2>
+            <div class="social-links">
+                <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
